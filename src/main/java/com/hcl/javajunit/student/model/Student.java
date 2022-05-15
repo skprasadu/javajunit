@@ -1,11 +1,11 @@
-package com.hcl.javajunit5.customer.model;
+package com.hcl.javajunit.student.model;
 
-public class Customer {
+public class Student {
     private Long id;
     private String name;
     private Integer age;
 
-    public Customer(Long id, String name, Integer age) {
+    public Student(Long id, String name, Integer age) {
         this.id = id;
         this.name = name;
         this.age = age;

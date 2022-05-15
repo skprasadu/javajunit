@@ -1,4 +1,4 @@
-    package com.hcl.javajunit5.logic;  
+    package com.hcl.javajunit.logic;  
     public class Calculation {  
       
         public static int findMax(int arr[]){  
