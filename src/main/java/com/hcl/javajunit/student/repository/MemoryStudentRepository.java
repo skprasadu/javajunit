@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.hcl.javajunit.student.model.Student;
 
-public class MemoryStudentRepository implements StudentRespository {
+public class MemoryStudentRepository implements StudentRepository {
 
     private static List<Student> DATA = Arrays.asList(
             new Student(1L, "mkyong", 38),
@@ -19,7 +19,10 @@ public class MemoryStudentRepository implements StudentRespository {
 
     @Override
     public Student findOne(Long id) {
-        return DATA.stream().filter(x -> x.getId() == id).findFirst().orElseThrow(IllegalArgumentException::new);
+        return DATA.stream()
+        		.filter(x -> x.getId() == id)
+        		.findFirst()
+        		.orElseThrow(IllegalArgumentException::new);
     }
 
     @Override
